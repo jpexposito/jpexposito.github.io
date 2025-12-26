@@ -1,6 +1,8 @@
 
 <div align="justify">
 
+# Título principal
+
 <img align="center" src="imagen/fondo-github.png" alt="Repositorio @jpexposito">
 
 ## Siempre Aprendiendo!
