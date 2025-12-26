@@ -1,8 +1,7 @@
-<div align="center">
-  <img src="../assets/img/banner.png" width="900" alt="Code & Learn" />
-</div>
-
-# Code & Learn
+---
+layout: default
+title: Code & Learn
+---
 
 Portal de **teoría y prácticas** de desarrollo y docencia.
 
