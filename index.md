@@ -7,19 +7,13 @@ title: Inicio
 
 La web está pensada como un **portal docente y técnico**, donde se organiza el contenido de forma clara y mantenible, separando **teoría** y **prácticas**, y facilitando la navegación tanto a estudiantes como a desarrolladores.
 
-<!--
-<div align="center">
-   <a href="https://jpexposito.com">
-    <img src="assets/images/logo-web-nar-ap.png" width="150" height="30%" alt="@jpexposito web personal">
-   </a>
-</div>
--->
-
 ## Evolucionar y mejorar es el trabajo de cada día
 
-Evolucionar y mejorar es el trabajo de cada día
 Me definiría como un Ingeniero Informático de vocación y que no se imagina en un entorno diferente al tecnológico. Persona de alto nivel de aprendizaje, con una gran facilidad de trabajo en equipo y con ganas de seguir creciendo como profesional en este sector. He participado en diferentes proyectos, en las distintas empresas en las que he trabajado, teniendo como premisa, intentar aprender y mejorar en cada uno de estos. Si hay algo que tengo presente cada día es que nunca aprendo suficiente como para dejar de querer saber más.
+**Importante**:_Evolucionar y mejorar es el trabajo de cada día_.
+
 ## Aprender y en construcción
+
 Podría definir que son dos ejes fundamentales en mi desarrollo como persona y como profesional. A esto voy a añadir un tercer elemento, y es  ***REALIZAR LAS COSAS CON CARIÑO***, para que las entienda mi abuela y las disfrute mi hijo.
 
 <div align="center">
