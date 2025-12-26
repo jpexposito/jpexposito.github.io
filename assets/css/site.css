@@ -30,7 +30,7 @@ body{
 /* HERO: usa la imagen como fondo */
 .hero{
   padding: 26px 18px 18px;
-  background: url("../images/fondo-github.png") center/cover no-repeat;
+  /*background: url("../images/fondo-github.png") center/cover no-repeat;*/
   border-bottom: 1px solid rgba(0,0,0,.06);
 }
 
@@ -71,20 +71,21 @@ body{
 
 /* Botones con colores “de la imagen” */
 .nav__link{
-  text-decoration:none;
+  text-decoration: none;
   color: #fff;
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid transparent;
-  background: var(--brand-1);
+  background: #f8a406; /* color principal */
   transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
 }
 
 .nav__link:hover{
   transform: translateY(-1px);
-  background: var(--brand-2);
+  background: #e09000; /* hover similar (más oscuro) */
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
+
 
 /* Contenido en tarjeta */
 main.container{
