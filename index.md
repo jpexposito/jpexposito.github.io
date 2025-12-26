@@ -58,14 +58,14 @@ El objetivo de estos respositorios es compartir conocimiento, el mismo que he es
 
 ## Conecta conmigo
 
-<p align="left">
+<p style="display:flex; gap:12px; align-items:center; margin:0;">
   <a href="https://twitter.com/jpexposito" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="jpexposito" height="30" width="40" /></a>
   <a href="https://es.linkedin.com/in/jperexposito" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://es.linkedin.com/in/jperexposito" height="30" width="40" /></a>
 </p>   
 
 ## Lenguajes
 
-  <p align"left">
+  <p style="display:flex; gap:12px; align-items:center; margin:0;">
     <a href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
     <a href="https://developer.android.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
     <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
