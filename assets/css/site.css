@@ -95,3 +95,101 @@ main.container{
   border-radius: 18px;
   box-shadow: 0 2px 14px rgba(0,0,0,.06);
 }
+
+
+/* =========================
+   Responsive (Mobile First)
+   ========================= */
+
+/* Mejora general en móviles */
+img { max-width: 100%; height: auto; }
+
+/* --- Tablets (<= 768px) --- */
+@media (max-width: 768px) {
+  .container{
+    padding: 16px;
+  }
+
+  .hero{
+    padding: 20px 14px 14px;
+  }
+
+  .hero__inner{
+    padding: 16px 14px 14px;
+    border-radius: 16px;
+  }
+
+  .hero__brand{
+    font-size: 26px;
+  }
+
+  .hero__tagline{
+    font-size: 14px;
+    margin: 6px 0 12px;
+  }
+
+  .nav{
+    gap: 8px;
+  }
+
+  .nav__link{
+    padding: 9px 12px;
+  }
+
+  main.container{
+    border-radius: 16px;
+  }
+}
+
+/* --- Móvil (<= 480px) --- */
+@media (max-width: 480px) {
+  body{
+    font-size: 15px;
+  }
+
+  .container{
+    padding: 12px;
+  }
+
+  .hero{
+    padding: 16px 12px 12px;
+  }
+
+  .hero__inner{
+    padding: 14px 12px 12px;
+    border-radius: 14px;
+  }
+
+  .hero__brand{
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+  .hero__tagline{
+    font-size: 13px;
+    margin: 6px 0 10px;
+  }
+
+  /* Menú más usable en móvil: 2 columnas */
+  .nav{
+    gap: 8px;
+  }
+
+  .nav__link{
+    flex: 1 1 calc(50% - 8px); /* 2 por fila */
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  main.container{
+    margin-top: 12px;
+    border-radius: 14px;
+  }
+}
+
+/* --- Muy pequeño (<= 360px) --- */
+@media (max-width: 360px) {
+  .nav__link{
+    flex: 1 1 100%; /* 1 por fila si no cabe */
+  }
+}
