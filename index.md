@@ -33,7 +33,7 @@ Podría definir que son dos ejes fundamentales en mi desarrollo como persona y c
 - Centralizar todo el material de **docencia y desarrollo** en un único sitio.
 - Ofrecer una estructura clara para:
   - 📘 **Teoría** (blog, guías, referencias).
-  - 🧪 **Prácticas** (enunciados, criterios, entregas).
+  - 🧪 **Prácticas** (enunciados, ...).
 - Publicar contenido directamente con **Markdown**, sin frameworks ni builds complejos.
 - Mantener enlaces estables y fáciles de compartir.
 
