@@ -3,75 +3,95 @@
   --bg:#f6f7fb;
   --card:#ffffff;
   --border:#e5e7eb;
+
+  /* 👉 Pon aquí los colores reales de tu imagen */
+  --brand-1:#d32f2f;  /* color principal botón */
+  --brand-2:#b71c1c;  /* hover / énfasis */
 }
 
-/* HERO con la imagen de fondo */
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,
+              "Apple Color Emoji","Segoe UI Emoji";
+  font-size:16px;
+  line-height:1.65;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 22px;
+}
+
+/* HERO: usa la imagen como fondo */
 .hero{
-  padding: 34px 18px 22px;
-  background: url("/imagen/fondo-github.png") center/cover no-repeat;
+  padding: 26px 18px 18px;
+  /*background: url("../images/fondo-github.png") center/cover no-repeat;*/
   border-bottom: 1px solid rgba(0,0,0,.06);
 }
 
+/* “Cabecera en blanco” encima de la imagen */
 .hero__inner{
   max-width: 960px;
   margin: 0 auto;
+  padding: 18px 18px 16px;
 
-  /* caja blanca encima de la imagen */
   background: rgba(255,255,255,.92);
   border: 1px solid rgba(0,0,0,.08);
   border-radius: 18px;
-  padding: 18px 18px 14px;
   box-shadow: 0 6px 22px rgba(0,0,0,.10);
-  text-align: center;
 }
 
-.hero__title{
-  margin: 0;
-  font-size: 30px;
+.hero__brand{
+  display:inline-block;
+  text-decoration:none;
+  color: var(--text);
   font-weight: 850;
+  letter-spacing: .2px;
+  font-size: 30px;
 }
 
 .hero__tagline{
-  margin: 8px 0 0;
-  color: rgba(31,35,40,.75);
+  margin: 8px 0 14px;
+  color: rgba(31,35,40,.78);
   font-size: 15px;
-}
-
-/* MENÚ debajo, sticky al hacer scroll */
-.topbar{
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(255,255,255,.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
 }
 
 /* Menú centrado */
 .nav{
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 12px 18px;
   display:flex;
   justify-content:center;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-/* Botones: color principal + hover */
+/* Botones con colores “de la imagen” */
 .nav__link{
-  text-decoration:none;
+  text-decoration: none;
   color: #fff;
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid transparent;
-  background: #f8a406;
+  background: #f8a406; /* color principal */
   transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
 }
 
 .nav__link:hover{
   transform: translateY(-1px);
-  background: #e09000;
+  background: #e09000; /* hover similar (más oscuro) */
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+
+/* Contenido en tarjeta */
+main.container{
+  margin-top: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 2px 14px rgba(0,0,0,.06);
 }
