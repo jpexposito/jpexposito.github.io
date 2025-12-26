@@ -3,8 +3,6 @@ layout: default
 title: Inicio
 ---
 
-# <img align="center" src="assets/images/fondo-github.png" alt="Repositorio @jpexposito">
-
 ## Siempre Aprendiendo!
 
 La web está pensada como un **portal docente y técnico**, donde se organiza el contenido de forma clara y mantenible, separando **teoría** y **prácticas**, y facilitando la navegación tanto a estudiantes como a desarrolladores.
