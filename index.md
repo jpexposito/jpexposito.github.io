@@ -35,26 +35,9 @@ Podría definir que son dos ejes fundamentales en mi desarrollo como persona y c
 - Publicar contenido directamente con **Markdown**, sin frameworks ni builds complejos.
 - Mantener enlaces estables y fáciles de compartir.
 
----
-
-## Estructura general
-
-```text
-/
-├─ index.md              # Portada principal
-├─ code-learn/           # Portal de teoría y prácticas
-│  ├─ teoria/            # Blog, guías y referencias
-│  └─ practicas/         # Prácticas por tecnología
-├─ proyectos/            # Páginas cortas por proyecto
-├─ assets/               # Imágenes y recursos
-└─ legacy/               # Compatibilidad con enlaces antiguos
-```
-
 El objetivo de estos respositorios es compartir conocimiento, el mismo que he estraído de internet o de los distintos proyectos en los que he participado.
 
-<div align="center">
-    <img src="assets/images/compartir.png" width="10%" height="10%" alt="@jpexposito compartir">
-</div>
+---
 
 ## Conecta conmigo
 

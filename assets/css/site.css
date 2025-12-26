@@ -107,6 +107,7 @@ main.container{
   border: 1px solid var(--border);
   border-radius: 18px;
   box-shadow: 0 2px 14px rgba(0,0,0,.06);
+  text-align: justify;
 }
 
 /* Imágenes siempre responsivas */
