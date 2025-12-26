@@ -2,8 +2,6 @@
 title: JP Expósito
 ---
 
-<div align="justify">
-
 <img align="center" src="assets/images/fondo-github.png" alt="Repositorio @jpexposito">
 
 ## Siempre Aprendiendo!
@@ -25,7 +23,6 @@ Podría definir que son dos ejes fundamentales en mi desarrollo como persona y c
 
 <div align="center">
     <img src="assets/images/construccion.png" width="20%" height="20%"alt="@jpexposito en construccion">
-    </br>
 </div>
 
 ## Objetivo
@@ -56,7 +53,6 @@ El objetivo de estos respositorios es compartir conocimiento, el mismo que he es
 
 <div align="center">
     <img src="assets/images/compartir.png" width="10%" height="10%"alt="@jpexposito compartir">
-    </br>
 </div>
 
 ## Conecta conmigo
@@ -87,5 +83,3 @@ El objetivo de estos respositorios es compartir conocimiento, el mismo que he es
     <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
     <a href="https://www.sqlite.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a>
   </p>
-
-</div>  
