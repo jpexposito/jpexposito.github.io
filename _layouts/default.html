@@ -14,18 +14,19 @@
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="topbar__wrap">
-      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <header class="hero">
+  <div class="hero__inner">
+    <a class="hero__brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <p class="hero__tagline">Docencia • Desarrollo • Recursos</p>
 
-      <nav class="menu">
-        <a href="{{ '/code-learn/' | relative_url }}">Code & Learn</a>
-        <a href="{{ '/code-learn/teoria/' | relative_url }}">Teoría</a>
-        <a href="{{ '/code-learn/practicas/' | relative_url }}">Prácticas</a>
-        <a href="{{ '/proyectos/' | relative_url }}">Proyectos</a>
-      </nav>
-    </div>
-  </header>
+    <nav class="nav">
+      <a class="nav__link" href="{{ '/code-learn/' | relative_url }}">Code & Learn</a>
+      <a class="nav__link" href="{{ '/code-learn/teoria/' | relative_url }}">Teoría</a>
+      <a class="nav__link" href="{{ '/code-learn/practicas/' | relative_url }}">Prácticas</a>
+      <a class="nav__link" href="{{ '/proyectos/' | relative_url }}">Proyectos</a>
+    </nav>
+  </div>
+</header>
 
   <main class="container">
     {{ content }}
