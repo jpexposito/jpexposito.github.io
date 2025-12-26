@@ -139,6 +139,16 @@ iframe, video{
   max-width: 100%;
 }
 
+.email-link img{
+  transition: transform .12s ease, opacity .12s ease;
+}
+
+.email-link:hover img{
+  transform: translateY(-1px);
+  opacity: .85;
+}
+
+
 /* =========================
    Responsive (Mobile First)
    ========================= */
