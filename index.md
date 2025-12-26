@@ -7,11 +7,13 @@ title: Inicio
 
 La web está pensada como un **portal docente y técnico**, donde se organiza el contenido de forma clara y mantenible, separando **teoría** y **prácticas**, y facilitando la navegación tanto a estudiantes como a desarrolladores.
 
+<!--
 <div align="center">
    <a href="https://jpexposito.com">
     <img src="assets/images/logo-web-nar-ap.png" width="150" height="30%" alt="@jpexposito web personal">
    </a>
 </div>
+-->
 
 ## Evolucionar y mejorar es el trabajo de cada día
 
