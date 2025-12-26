@@ -1,3 +1,8 @@
+---
+layout: default
+title: Inicio
+---
+
 # <img align="center" src="assets/images/fondo-github.png" alt="Repositorio @jpexposito">
 
 ## Siempre Aprendiendo!
