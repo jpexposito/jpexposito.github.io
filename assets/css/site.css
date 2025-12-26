@@ -147,6 +147,7 @@ iframe, video{
 
 .email-link img{
   transition: transform .12s ease, opacity .12s ease;
+  padding-top: 15px;
 }
 
 .email-link:hover img{
