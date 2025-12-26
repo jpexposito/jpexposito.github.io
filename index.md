@@ -1,8 +1,4 @@
----
-title: JP Expósito
----
-
-<img align="center" src="assets/images/fondo-github.png" alt="Repositorio @jpexposito">
+# <img align="center" src="assets/images/fondo-github.png" alt="Repositorio @jpexposito">
 
 ## Siempre Aprendiendo!
 
@@ -22,7 +18,7 @@ Me definiría como un Ingeniero Informático de vocación y que no se imagina en
 Podría definir que son dos ejes fundamentales en mi desarrollo como persona y como profesional. A esto voy a añadir un tercer elemento, y es  ***REALIZAR LAS COSAS CON CARIÑO***, para que las entienda mi abuela y las disfrute mi hijo.
 
 <div align="center">
-    <img src="assets/images/construccion.png" width="150" height="30%" alt="@jpexposito en construccion">
+    <img src="assets/images/construccion.png" width="20%" height="20%"alt="@jpexposito en construccion">
 </div>
 
 ## Objetivo
@@ -52,7 +48,7 @@ Podría definir que son dos ejes fundamentales en mi desarrollo como persona y c
 El objetivo de estos respositorios es compartir conocimiento, el mismo que he estraído de internet o de los distintos proyectos en los que he participado.
 
 <div align="center">
-    <img src="assets/images/compartir.png" width="10%" height="10%"alt="@jpexposito compartir">
+    <img src="assets/images/compartir.png" width="10%" height="10%" alt="@jpexposito compartir">
 </div>
 
 ## Conecta conmigo
@@ -83,3 +79,4 @@ El objetivo de estos respositorios es compartir conocimiento, el mismo que he es
     <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
     <a href="https://www.sqlite.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a>
   </p>
+
