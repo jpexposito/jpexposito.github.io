@@ -1,10 +1,10 @@
-/* custom.css (opcional)
-   GitHub Pages (Markdown simple) no aplica CSS automáticamente.
-   Si en el futuro usas Jekyll o HTML, puedes enlazar este CSS.
-*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
 
-:root {
-  --accent: #d32f2f;
-  --bg: #f6f7fb;
-  --text: #1f2937;
+/* Justificar texto (opcional) */
+.justify {
+  text-align: justify;
 }
