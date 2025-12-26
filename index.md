@@ -2,9 +2,10 @@
 title: JP Expósito
 ---
 
+# <img align="center" src="imagen/fondo-github.png" alt="Repositorio @jpexposito">
+
 <div align="justify">
 
-<img align="center" src="imagen/fondo-github.png" alt="Repositorio @jpexposito">
 
 ## Siempre Aprendiendo!
 
