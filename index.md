@@ -38,7 +38,7 @@ El objetivo de estos respositorios es compartir conocimiento, el mismo que he es
 <p style="display:flex; gap:12px; align-items:center; margin:0;">
   <a href="https://twitter.com/jpexposito" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="jpexposito" width="32" height="32" /></a>
   <a href="https://es.linkedin.com/in/jperexposito" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://es.linkedin.com/in/jperexposito" width="32" height="32" /></a>
-  <a href="mailto:tuemail@dominio.com" class="email-link" title="Contactar por email">
+  <a href="mailto:jpe.gsc@gmail.com" class="email-link" title="Contactar por email">
   <img src="https://raw.githubusercontent.com/twbs/icons/main/icons/envelope.svg" alt="Email" width="32" height="32"/>
 </a>
 
