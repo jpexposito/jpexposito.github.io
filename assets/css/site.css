@@ -22,3 +22,64 @@ body {
   padding: 24px;
 }
 
+/* Justificado (opcional) */
+.justify p,
+.justify li{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Topbar */
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar__wrap{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 16px;
+}
+
+.brand{
+  color: var(--text);
+  text-decoration:none;
+  font-weight:700;
+}
+
+.menu{
+  display:flex;
+  gap: 10px;
+  flex-wrap:wrap;
+}
+
+.menu a{
+  text-decoration:none;
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.menu a:hover{
+  border-color: var(--border);
+  background: #fff;
+}
+
+/* Headings más “docs” */
+h1,h2,h3{line-height:1.2}
+h2{margin-top: 28px}
+
+/* Footer */
+.footer{
+  border-top: 1px solid var(--border);
+  background: var(--card);
+}
+

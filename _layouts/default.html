@@ -3,16 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>{{ page.title }} · {{ site.title }}</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="{{ '/assets/imgages/icons/logo-web-nar-ap.ico' | relative_url }}" sizes="any">
+  <link rel="icon" href="{{ '/assets/img/icons/logo-web-nar-ap.ico' | relative_url }}" sizes="any">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
+
 <body>
+  <header class="topbar">
+    <div class="topbar__wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+      <nav class="menu">
+        <a href="{{ '/code-learn/' | relative_url }}">Code & Learn</a>
+        <a href="{{ '/code-learn/teoria/' | relative_url }}">Teoría</a>
+        <a href="{{ '/code-learn/practicas/' | relative_url }}">Prácticas</a>
+        <a href="{{ '/proyectos/' | relative_url }}">Proyectos</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="container">
     {{ content }}
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© {{ site.title }} — Docencia y desarrollo</small>
+    </div>
+  </footer>
 </body>
 </html>
