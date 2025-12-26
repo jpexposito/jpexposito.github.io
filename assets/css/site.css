@@ -4,10 +4,9 @@
   --card:#ffffff;
   --border:#e5e7eb;
 
-  /* Paleta corporativa (rojo académico) */
-  --accent:#d32f2f;
-  --accent2:#b71c1c;
-  --deep:#0b1020;          /* azul muy oscuro para contraste */
+  /* 👉 Pon aquí los colores reales de tu imagen */
+  --brand-1:#d32f2f;  /* color principal botón */
+  --brand-2:#b71c1c;  /* hover / énfasis */
 }
 
 *{box-sizing:border-box}
@@ -28,37 +27,29 @@ body{
   padding: 22px;
 }
 
-/* HERO sin imágenes: degradado + “glow” suave */
+/* HERO: usa la imagen como fondo */
 .hero{
-  padding: 32px 18px 18px;
-  text-align: center;
-
-  background:
-    radial-gradient(900px 320px at 50% -40px, rgba(255,255,255,.16), rgba(255,255,255,0)),
-    radial-gradient(700px 240px at 20% 0px, rgba(211,47,47,.35), rgba(211,47,47,0)),
-    radial-gradient(700px 240px at 80% 20px, rgba(183,28,28,.30), rgba(183,28,28,0)),
-    linear-gradient(135deg, var(--deep), #111827 55%, #0f172a);
-
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  padding: 26px 18px 18px;
+  background: url("../images/fondo-github.png") center/cover no-repeat;
+  border-bottom: 1px solid rgba(0,0,0,.06);
 }
 
-/* Panel translúcido para que se vea “premium” */
+/* “Cabecera en blanco” encima de la imagen */
 .hero__inner{
   max-width: 960px;
   margin: 0 auto;
   padding: 18px 18px 16px;
 
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 22px;
-  background: rgba(255,255,255,.06);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  box-shadow: 0 6px 22px rgba(0,0,0,.10);
 }
 
 .hero__brand{
   display:inline-block;
   text-decoration:none;
-  color:#fff;
+  color: var(--text);
   font-weight: 850;
   letter-spacing: .2px;
   font-size: 30px;
@@ -66,11 +57,11 @@ body{
 
 .hero__tagline{
   margin: 8px 0 14px;
-  color: rgba(255,255,255,.88);
+  color: rgba(31,35,40,.78);
   font-size: 15px;
 }
 
-/* MENÚ centrado tipo “pill” */
+/* Menú centrado */
 .nav{
   display:flex;
   justify-content:center;
@@ -78,37 +69,28 @@ body{
   flex-wrap: wrap;
 }
 
+/* Botones con colores “de la imagen” */
 .nav__link{
   text-decoration:none;
-  color:#fff;
+  color: #fff;
   padding: 10px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.18);
-
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
-  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+  border: 1px solid transparent;
+  background: var(--brand-1);
+  transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
 }
 
 .nav__link:hover{
   transform: translateY(-1px);
-  border-color: rgba(255,255,255,.30);
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
+  background: var(--brand-2);
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
 
-/* Contenido en “card” para lectura */
+/* Contenido en tarjeta */
 main.container{
   margin-top: 16px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
   box-shadow: 0 2px 14px rgba(0,0,0,.06);
-}
-
-/* Justificado opcional (si usas <div class="justify">) */
-.justify p,
-.justify li{
-  text-align: justify;
-  text-justify: inter-word;
 }
