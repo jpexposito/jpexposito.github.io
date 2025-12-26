@@ -33,13 +33,9 @@
 
 .hero__tagline{
   margin: 8px 0 0;
-  text-align: center;     /* centrado */
-  font-weight: 700;       /* negrita */
-  color: rgba(31,35,40,.85);
+  color: rgba(31,35,40,.75);
   font-size: 15px;
-  letter-spacing: .3px;  /* opcional: más elegante */
 }
-
 
 /* MENÚ debajo, sticky al hacer scroll */
 .topbar{
