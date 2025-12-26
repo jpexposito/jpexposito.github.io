@@ -36,7 +36,7 @@ body{
 
 /* Asegurar que estos bloques no excedan el ancho del dispositivo */
 .container, .hero, .hero__inner{
-  max-width: 100%;
+  max-width: 1020px;
 }
 
 /* HERO */
