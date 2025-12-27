@@ -355,14 +355,61 @@ body.blog h3{
   color:#0f5f8a;
 }
 
-/* ===== PROYECTOS (solo /proyectos/) — botones con interacción tipo blog ===== */
-body.projects .project__btn,
-body.projects .project__btn--ghost{
-  transition: transform .12s ease, background .12s ease, box-shadow .12s ease, border-color .12s ease, color .12s ease;
+/* ===== PROYECTOS (solo /proyectos/) ===== */
+body.projects .nav__link{
+  background:#ec1f27;           /* rojo principal */
 }
-
-body.projects .project__btn:hover,
-body.projects .project__btn--ghost:hover{
+body.projects .nav__link:hover{
   transform: translateY(-1px);
+  background:#c8181f;           /* rojo más oscuro */
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
+
+/* Portada de proyectos */
+body.projects .blog__title{
+  color:#ec1f27;
+  margin-bottom:1.5rem;
+}
+
+body.projects .blog__list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+body.projects .blog__item{
+  margin-bottom:1rem;
+  padding-bottom:.75rem;
+  border-bottom:1px solid rgba(236,31,39,.18);
+}
+
+body.projects .blog__link{
+  color:#ec1f27;
+  font-weight:600;
+  text-decoration:none;
+}
+body.projects .blog__link:hover{
+  color:#c8181f;
+  text-decoration:underline;
+}
+
+body.projects .blog__date{
+  display:block;
+  font-size:.85rem;
+  color:#6c7a86;
+  margin-top:.2rem;
+}
+
+/* Títulos dentro de páginas de proyectos */
+body.projects h1{
+  color:#ec1f27;
+  margin-bottom:.25rem;
+}
+body.projects h2{
+  color:#c8181f;
+  margin-top:1.25rem;
+}
+body.projects h3{
+  color:#a3151b; /* rojo más sobrio para jerarquía */
+}
+
