@@ -2,6 +2,7 @@
 layout: post
 title: Blog
 ---
+<body class="blog">
 
 <h1>Blog</h1>
 
