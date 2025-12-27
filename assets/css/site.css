@@ -413,3 +413,7 @@ body.projects h3{
   color:#a3151b; /* rojo más sobrio para jerarquía */
 }
 
+/* Botón Buy Me a Coffee personalizado */
+body.blog #bmc-wbtn { background:#1688c6 !important; }
+body.projects #bmc-wbtn { background:#ec1f27 !important; }
+
