@@ -47,7 +47,6 @@
   text-decoration: underline;
 }
 
-/* Fecha */
 .blog__date {
   display: block;
   font-size: .85rem;
@@ -55,19 +54,16 @@
   margin-top: .2rem;
 }
 
-/* Título principal del post (del layout) */
 body.blog h1 {
   color: #1688c6;
   margin-bottom: .25rem;
 }
 
-/* Subtítulos dentro del contenido del post */
 body.blog h2 {
   color: #1273a7;
   margin-top: 1.25rem;
 }
 
-/* Títulos más pequeños */
 body.blog h3 {
   color: #0f5f8a;
 }

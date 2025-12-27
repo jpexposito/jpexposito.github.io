@@ -46,7 +46,7 @@ Puedes participar de varias formas:
 
 Si el contenido te resulta útil y quieres apoyar este proyecto educativo, puedes hacerlo aquí:
 
-**[Invítame a un café en Buy Me a Coffee](https://buymeacoffee.com/jpexposito)**
+👉 ☕ **[Invítame a un café en Buy Me a Coffee](https://buymeacoffee.com/jpexposito)**
 
 > *Cada aportación ayuda a mantener y mejorar los recursos compartidos.*
 
