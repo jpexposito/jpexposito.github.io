@@ -1,3 +1,10 @@
-title: Joatham Pérez Expósito
-description: Blog personal y docente de Joatham Pérez Expósito
+title: "Joatham Pérez Expósito"
+description: "Blog personal y docente de Joatham Pérez Expósito"
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:year/:month/:day/:title/
