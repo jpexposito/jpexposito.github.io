@@ -2,9 +2,28 @@ title: "Joatham Pérez Expósito"
 description: "Blog personal y docente de Joatham Pérez Expósito"
 markdown: kramdown
 
+# URLs del sitio (recomendado en GitHub Pages)
+url: "https://jpexposito.github.io"
+baseurl: ""
+
+# Permalinks solo para posts (blog)
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       permalink: /blog/:year/:month/:day/:title/
+
+# Colección de proyectos
+collections:
+  projects:
+    output: true
+    permalink: /proyectos/:name/
+
+# Opcional: excluir archivos/carpetas que no deben publicarse
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
