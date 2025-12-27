@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-<h1 class="blog__title">Últimas entradas</h1>
+<h2 class="blog__title">Últimas entradas</h2>
 
 <ul class="blog__list">
   {% assign posts = site.posts | sort: "date" | reverse %}

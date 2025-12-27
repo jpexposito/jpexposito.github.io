@@ -3,7 +3,7 @@ layout: default
 title: Proyectos
 ---
 
-<h1 class="blog__title">Mis Proyectos</h1>
+<h2 class="blog__title">Mis Proyectos</h2>
 
 <ul class="blog__list">
   {% assign items = site.projects | sort: "date" | reverse %}
