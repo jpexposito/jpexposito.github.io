@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="{% if page.url contains '/blog/' %}blog{% endif %}">
   <header class="hero">
   <div class="hero__inner">
     <a class="hero__brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
