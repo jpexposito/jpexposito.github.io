@@ -34,7 +34,6 @@ body{
   padding: 22px;
 }
 
-/* Asegurar que estos bloques no excedan el ancho del dispositivo */
 .container,
 .hero__inner,
 .nav{
@@ -45,10 +44,8 @@ body{
 /* HERO */
 .hero{
   padding: 26px 18px 18px;
-  /* background: url("../images/fondo-github.png") center/cover no-repeat; */
   border-bottom: 1px solid rgba(0,0,0,.06);
   width: 100%;
-  padding: 26px 18px 18px;
   border-bottom: 1px solid rgba(0,0,0,.06);
 }
 
