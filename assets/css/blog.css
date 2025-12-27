@@ -1,0 +1,19 @@
+/* =========================
+   Estilos para las páginas
+   de blog y contenido
+   ========================= */
+
+/* Botones */
+/* Solo para la sección del blog */
+.blog .nav__link{
+  background: #1688c6;           /* azul principal */
+}
+
+.blog .nav__link:hover{
+  transform: translateY(-1px);
+  background: #1273a7;           /* hover más oscuro */
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+
+
