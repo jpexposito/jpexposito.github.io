@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: default
 title: Blog
 ---
 
-<h1 class="blog__title">Blog</h1>
+<h1 class="blog__title">Últimas entradas</h1>
 
 <ul class="blog__list">
   {% assign posts = site.posts | sort: "date" | reverse %}
