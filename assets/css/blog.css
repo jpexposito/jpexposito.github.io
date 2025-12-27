@@ -15,5 +15,45 @@
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
 
+/* Título del blog */
+.blog__title {
+  color: #1688c6;
+  margin-bottom: 1.5rem;
+}
+
+/* Lista */
+.blog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item */
+.blog__item {
+  margin-bottom: 1rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid rgba(22,136,198,.15);
+}
+
+/* Enlace del post */
+.blog__link {
+  color: #1688c6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog__link:hover {
+  color: #1273a7;
+  text-decoration: underline;
+}
+
+/* Fecha */
+.blog__date {
+  display: block;
+  font-size: .85rem;
+  color: #6c7a86;
+  margin-top: .2rem;
+}
+
 
 

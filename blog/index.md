@@ -3,13 +3,18 @@ layout: post
 title: Blog
 ---
 
-<h1>Blog</h1>
+<h1 class="blog__title">Blog</h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <small> — {{ post.date | date: "%Y-%m-%d" }}</small>
+<ul class="blog__list">
+  {% assign posts = site.posts | sort: "date" | reverse %}
+  {% for post in posts %}
+    <li class="blog__item">
+      <a class="blog__link" href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+      <time class="blog__date" datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </time>
     </li>
   {% endfor %}
 </ul>
