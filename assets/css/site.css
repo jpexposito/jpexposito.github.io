@@ -263,29 +263,31 @@ iframe, video{
   background:#e09000;
 }
 
-/* Proyectos */
-.project__btn{
+/* Proyectos (solo en /proyectos/) */
+body.projects .project__btn{
   display:inline-block;
   padding:.5rem .8rem;
   border-radius:.6rem;
-  background:#1688c6;
+  background:#ec1f27;
   color:#fff;
   text-decoration:none;
   margin-right:.5rem;
 }
-.project__btn:hover{ background:#1273a7; }
+body.projects .project__btn:hover{
+  background:#c8181f;
+}
 
-.project__btn--ghost{
+body.projects .project__btn--ghost{
   background:transparent;
-  border:1px solid rgba(22,136,198,.5);
-  color:#1688c6;
+  border:1px solid rgba(236,31,39,.55);
+  color:#ec1f27;
 }
-.project__btn--ghost:hover{
-  border-color:#1273a7;
-  color:#1273a7;
+body.projects .project__btn--ghost:hover{
+  border-color:rgba(200,24,31,.75);
+  color:#c8181f;
 }
 
-.project__tags{
+body.projects .project__tags{
   list-style:none;
   padding:0;
   margin:.75rem 0 0;
@@ -293,15 +295,25 @@ iframe, video{
   gap:.5rem;
   flex-wrap:wrap;
 }
-.project__tag, .project__pill{
+
+body.projects .project__tag,
+body.projects .project__pill{
   display:inline-block;
   padding:.2rem .55rem;
   border-radius:999px;
-  border:1px solid rgba(22,136,198,.25);
-  color:#1688c6;
+  border:1px solid rgba(236,31,39,.28);
+  color:#ec1f27;
   font-size:.85rem;
 }
-.project__pill{ margin-right:.35rem; }
+body.projects .project__pill{ margin-right:.35rem; }
 
-.project__title{ margin-bottom:.2rem; }
-.project__meta{ margin:0 0 .75rem; color:#6c7a86; }
+body.projects .project__title{ margin-bottom:.2rem; }
+body.projects .project__meta{ margin:0 0 .75rem; color:#6c7a86; }
+
+/* Opcional: enlaces dentro del contenido del proyecto */
+body.projects .project a{
+  color:#ec1f27;
+}
+body.projects .project a:hover{
+  color:#c8181f;
+}
