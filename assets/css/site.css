@@ -249,3 +249,20 @@ iframe, video{
     flex: 1 1 100%; /* 1 por fila si no cabe */
   }
 }
+
+/* Css seccion code learn */
+
+.hero--codelearn .nav__link{
+  background:#2563eb;          /* azul */
+}
+.hero--codelearn .nav__link:hover{
+  background:#1d4ed8;
+}
+
+.hero--practice .nav__link{
+  background:#f8a406;          /* naranja */
+}
+.hero--practice .nav__link:hover{
+  background:#e09000;
+}
+

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<header class="hero hero--codelearn">
+  <div class="hero__inner">
+    <a class="hero__brand" href="{{ '/code-learn/' | relative_url }}">Code & Learn</a>
+    <p class="hero__tagline">Teoría, guías y referencias</p>
+
+    {% include nav-code-learn.html %}
+  </div>
+</header>
+
+<main class="container">
+  {{ content }}
+</main>

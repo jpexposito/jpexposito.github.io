@@ -1,18 +1,8 @@
 ---
-layout: default
+layout: code-learn
 title: Code & Learn
 ---
 
-Portal de **teoría y prácticas** de desarrollo y docencia.
+# Bienvenido a Code & Learn
 
-- 📘 [Teoría](teoria/)
-- 🧪 [Prácticas](practicas/)
-- 🧰 [Proyectos](../proyectos/)
-
----
-
-## Últimas actualizaciones
-
-- [Routing moderno en Angular](teoria/blog/angular/routing-standalone.md)
-- [Guía rápida de Git](teoria/guias/git.md)
-- [Práctica 01 — Gestor de tareas](practicas/angular/practica-01-gestor-tareas.md)
+Aquí va la teoría…
