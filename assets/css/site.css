@@ -301,3 +301,68 @@ body.projects .project a{
 body.projects .project a:hover{
   color:#c8181f;
 }
+/* ===== BLOG (solo /blog/) ===== */
+body.blog .nav__link{
+  background:#1688c6;
+}
+body.blog .nav__link:hover{
+  transform: translateY(-1px);
+  background:#1273a7;
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+/* Portada del blog */
+body.blog .blog__title{
+  color:#1688c6;
+  margin-bottom:1.5rem;
+}
+body.blog .blog__list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+body.blog .blog__item{
+  margin-bottom:1rem;
+  padding-bottom:.75rem;
+  border-bottom:1px solid rgba(22,136,198,.15);
+}
+body.blog .blog__link{
+  color:#1688c6;
+  font-weight:600;
+  text-decoration:none;
+}
+body.blog .blog__link:hover{
+  color:#1273a7;
+  text-decoration:underline;
+}
+body.blog .blog__date{
+  display:block;
+  font-size:.85rem;
+  color:#6c7a86;
+  margin-top:.2rem;
+}
+
+/* Títulos dentro de posts del blog */
+body.blog h1{
+  color:#1688c6;
+  margin-bottom:.25rem;
+}
+body.blog h2{
+  color:#1273a7;
+  margin-top:1.25rem;
+}
+body.blog h3{
+  color:#0f5f8a;
+}
+
+/* ===== PROYECTOS (solo /proyectos/) — botones con interacción tipo blog ===== */
+body.projects .project__btn,
+body.projects .project__btn--ghost{
+  transition: transform .12s ease, background .12s ease, box-shadow .12s ease, border-color .12s ease, color .12s ease;
+}
+
+body.projects .project__btn:hover,
+body.projects .project__btn--ghost:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
