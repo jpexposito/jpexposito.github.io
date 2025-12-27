@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<article class="project">
+  <header class="project__header">
+    <h1 class="project__title">{{ page.title }}</h1>
+
+    <p class="project__meta">
+      <small>
+        {{ page.date | date: "%Y-%m-%d" }}
+        {% if page.nivel %} · {{ page.nivel }}{% endif %}
+        {% if page.promocion %} · {{ page.promocion }}{% endif %}
+        {% if page.estado %} · {{ page.estado }}{% endif %}
+      </small>
+    </p>
+
+    <p class="project__links">
+      {% if page.repo %}
+        <a class="project__btn" href="{{ page.repo }}" target="_blank" rel="noopener">Repositorio</a>
+      {% endif %}
+      {% if page.demo %}
+        <a class="project__btn project__btn--ghost" href="{{ page.demo }}" target="_blank" rel="noopener">Demo</a>
+      {% endif %}
+    </p>
+
+    {% if page.stack %}
+      <ul class="project__tags">
+        {% for t in page.stack %}
+          <li class="project__tag">{{ t }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+
+  <div class="project__content">
+    {{ content }}
+  </div>
+</article>
