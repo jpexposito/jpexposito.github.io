@@ -19,7 +19,7 @@ El objetivo del blog es **aprender haciendo**, compartir conocimiento y fomentar
 
 ---
 
-## 📌 ¿Qué encontrarás aquí?
+## ¿Qué encontrarás aquí?
 
 - **Entradas técnicas** explicadas paso a paso  
 - **Recursos didácticos** para el alumnado  
@@ -30,7 +30,7 @@ Las entradas están ordenadas de **más reciente a más antigua**.
 
 ---
 
-## 🤝 Colabora
+## Colabora
 
 Este blog está abierto a la colaboración.
 
@@ -42,11 +42,11 @@ Puedes participar de varias formas:
 
 ---
 
-## ☕ Apoya el proyecto
+## Apoya el proyecto
 
 Si el contenido te resulta útil y quieres apoyar este proyecto educativo, puedes hacerlo aquí:
 
-👉 **[Invítame a un café en Buy Me a Coffee](https://buymeacoffee.com/jpexposito)**
+**[Invítame a un café en Buy Me a Coffee](https://buymeacoffee.com/jpexposito)**
 
 > *Cada aportación ayuda a mantener y mejorar los recursos compartidos.*
 
