@@ -22,30 +22,6 @@ title: Inicio
       <strong>Importante:</strong> <em>Evolucionar y mejorar es el trabajo de cada día.</em>
     </div>
   </div>
-
-  <div class="cardx">
-    <div class="cardx__head">
-      <div class="cardx__icon">🧭</div>
-      <div>
-        <div class="cardx__title">Accesos rápidos</div>
-        <div class="cardx__subtitle">Empieza por aquí</div>
-      </div>
-    </div>
-
-    <ul class="cardx__list">
-      <li>📘 Lee teoría, guías y referencias en el blog.</li>
-      <li>🧪 Explora projects con demos y casos reales.</li>
-      <li>💻 Revisa el código y documentación en GitHub.</li>
-    </ul>
-
-    <div class="cardx__cta">
-      <a class="btnx" href="{{ '/blog' | relative_url }}">Explorar Blog</a>
-      <a class="btnx" href="{{ '/projects' | relative_url }}">Ver Projects</a>
-      <a class="btnx btnx--ghost"
-         href="{{ site.github_url | default: 'https://github.com/jpexposito' }}"
-         target="_blank" rel="noopener">GitHub →</a>
-    </div>
-  </div>
 </div>
 
 ---
