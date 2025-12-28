@@ -3,7 +3,7 @@ layout: default
 title: Inicio
 ---
 
-<div class="cards-grid cards-grid--2">
+<div class="cards-grid cards-grid--1">
   <div class="cardx">
     <div class="cardx__head">
       <div class="cardx__icon">🚀</div>
