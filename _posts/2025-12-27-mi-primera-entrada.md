@@ -5,7 +5,7 @@ date: 2025-12-27 18:30:00 +0000
 categories: [general]
 ---
 
-# Presentación
+## Presentación
 
 Bienvenido/a al blog de **Joatham Pérez Expósito**.
 
@@ -19,7 +19,7 @@ El objetivo del blog es **aprender haciendo**, compartir conocimiento y fomentar
 
 ---
 
-## ¿Qué encontrarás aquí?
+### ¿Qué encontrarás aquí?
 
 - **Entradas técnicas** explicadas paso a paso  
 - **Recursos didácticos** para el alumnado  
@@ -30,7 +30,7 @@ Las entradas están ordenadas de **más reciente a más antigua**.
 
 ---
 
-## Colabora
+### Colabora
 
 Este blog está abierto a la colaboración.
 
@@ -42,7 +42,7 @@ Puedes participar de varias formas:
 
 ---
 
-## Apoya el proyecto
+### Apoya el proyecto
 
 Si el contenido te resulta útil y quieres apoyar este proyecto educativo, puedes hacerlo aquí:
 
