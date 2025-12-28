@@ -1,8 +1,9 @@
 /* =========================
-   site.css (final)
+   site.css (actualizado)
    - Layout general + hero + nav
    - Botones unificados (nav + projects + cards .btnx)
-   - Estilos blog/projects existentes
+   - Listado "Últimas entradas" con estilo tipo card
+   - Estilos blog/projects existentes (colores y headings)
    ========================= */
 
 :root{
@@ -158,7 +159,7 @@ body.projects .project__btn:focus-visible,
   outline-offset: 2px;
 }
 
-/* Menú tipo “pill” */
+/* Menú igual a btnx (misma forma) */
 .nav__link{
   border-radius: var(--btn-radius);
   padding: var(--btn-pad-y) var(--btn-pad-x);
@@ -271,6 +272,69 @@ iframe, video{
 }
 
 /* =========================
+   Blog list (Últimas entradas) estilo tipo cards
+   - No requiere cambiar el HTML
+   ========================= */
+
+.blog__title{
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 850;
+  letter-spacing: .1px;
+}
+
+/* Lista como grid */
+.blog__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+/* Cada item como card */
+.blog__item{
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  background: #fff;
+  padding: 14px 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.04);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+
+.blog__item:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.06);
+  border-color: rgba(0,0,0,.12);
+}
+
+/* Link como “título” */
+.blog__link{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 850;
+  font-size: 16px;
+  line-height: 1.25;
+  color: inherit;
+}
+
+.blog__link:hover{
+  text-decoration: underline;
+}
+
+.blog__date{
+  display: block;
+  margin-top: 6px;
+  font-size: .90rem;
+  color: #6c7a86;
+}
+
+/* Opcional: 2 columnas en escritorio */
+@media (min-width: 980px){
+  .blog__list{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* =========================
    projects: tags/pills + textos
    ========================= */
 body.projects .project__tags{
@@ -304,101 +368,14 @@ body.projects .project a:hover{
   color:#c8181f;
 }
 
-/* ===== BLOG (solo /blog/) ===== */
+/* ===== Títulos dentro de posts ===== */
+body.blog h1{ color:#1688c6; margin-bottom:.25rem; }
+body.blog h2{ color:#1273a7; margin-top:1.25rem; }
+body.blog h3{ color:#0f5f8a; }
 
-/* Portada del blog */
-body.blog .blog__title{
-  color:#1688c6;
-  margin-bottom:1.5rem;
-}
-body.blog .blog__list{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-body.blog .blog__item{
-  margin-bottom:1rem;
-  padding-bottom:.75rem;
-  border-bottom:1px solid rgba(22,136,198,.15);
-}
-body.blog .blog__link{
-  color:#1688c6;
-  font-weight:600;
-  text-decoration:none;
-}
-body.blog .blog__link:hover{
-  color:#1273a7;
-  text-decoration:underline;
-}
-body.blog .blog__date{
-  display:block;
-  font-size:.85rem;
-  color:#6c7a86;
-  margin-top:.2rem;
-}
-
-/* Títulos dentro de posts del blog */
-body.blog h1{
-  color:#1688c6;
-  margin-bottom:.25rem;
-}
-body.blog h2{
-  color:#1273a7;
-  margin-top:1.25rem;
-}
-body.blog h3{
-  color:#0f5f8a;
-}
-
-/* ===== projects (solo /projects/) ===== */
-
-/* Portada de projects (usa clases blog__* en tu plantilla) */
-body.projects .blog__title{
-  color:#ec1f27;
-  margin-bottom:1.5rem;
-}
-
-body.projects .blog__list{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-body.projects .blog__item{
-  margin-bottom:1rem;
-  padding-bottom:.75rem;
-  border-bottom:1px solid rgba(236,31,39,.18);
-}
-
-body.projects .blog__link{
-  color:#ec1f27;
-  font-weight:600;
-  text-decoration:none;
-}
-body.projects .blog__link:hover{
-  color:#c8181f;
-  text-decoration:underline;
-}
-
-body.projects .blog__date{
-  display:block;
-  font-size:.85rem;
-  color:#6c7a86;
-  margin-top:.2rem;
-}
-
-/* Títulos dentro de páginas de projects */
-body.projects h1{
-  color:#ec1f27;
-  margin-bottom:.25rem;
-}
-body.projects h2{
-  color:#c8181f;
-  margin-top:1.25rem;
-}
-body.projects h3{
-  color:#a3151b;
-}
+body.projects h1{ color:#ec1f27; margin-bottom:.25rem; }
+body.projects h2{ color:#c8181f; margin-top:1.25rem; }
+body.projects h3{ color:#a3151b; }
 
 /* Botón Buy Me a Coffee personalizado */
 body.blog #bmc-wbtn { background:#1688c6 !important; }
