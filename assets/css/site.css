@@ -247,7 +247,7 @@ iframe, video{
   }
 }
 
-/* Proyectos (solo en /proyectos/) */
+/* projects (solo en /projects/) */
 body.projects .project__btn{
   display:inline-block;
   padding:.5rem .8rem;
@@ -355,7 +355,7 @@ body.blog h3{
   color:#0f5f8a;
 }
 
-/* ===== PROYECTOS (solo /proyectos/) ===== */
+/* ===== projects (solo /projects/) ===== */
 body.projects .nav__link{
   background:#ec1f27;           /* rojo principal */
 }
@@ -365,7 +365,7 @@ body.projects .nav__link:hover{
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
 
-/* Portada de proyectos */
+/* Portada de projects */
 body.projects .blog__title{
   color:#ec1f27;
   margin-bottom:1.5rem;
@@ -400,7 +400,7 @@ body.projects .blog__date{
   margin-top:.2rem;
 }
 
-/* Títulos dentro de páginas de proyectos */
+/* Títulos dentro de páginas de projects */
 body.projects h1{
   color:#ec1f27;
   margin-bottom:.25rem;

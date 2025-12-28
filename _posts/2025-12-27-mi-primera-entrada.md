@@ -13,7 +13,7 @@ Este espacio forma parte de una web **educativa y de desarrollo**, donde compart
 - reflexiones sobre tecnología y docencia
 - recursos para el aula
 - ejemplos prácticos de desarrollo front/back
-- aprendizajes reales aplicados a proyectos
+- aprendizajes reales aplicados a projects
 
 El objetivo del blog es **aprender haciendo**, compartir conocimiento y fomentar una comunidad activa alrededor del desarrollo y la educación.
 

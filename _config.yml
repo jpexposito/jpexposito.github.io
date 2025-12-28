@@ -14,11 +14,11 @@ defaults:
     values:
       permalink: /blog/:year/:month/:day/:title/
 
-# Colección de proyectos
+# Colección de projects
 collections:
   projects:
     output: true
-    permalink: /proyectos/:name/
+    permalink: /projects/:name/
 
 # Opcional: excluir archivos/carpetas que no deben publicarse
 exclude:

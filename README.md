@@ -8,4 +8,4 @@ Repositorio de la web personal publicada con **GitHub Pages** en:
 
 - `assets/` recursos (imágenes, iconos, CSS)
 - `code-learn/` portal principal (teoría + prácticas)
-- `proyectos/` páginas cortas por proyecto
+- `projects/` páginas cortas por proyecto
