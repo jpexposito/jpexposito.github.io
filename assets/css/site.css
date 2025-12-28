@@ -448,6 +448,14 @@ body.projects .project a:hover{ color:#c8181f; }
 body.blog #bmc-wbtn { background:#1688c6 !important; }
 body.projects #bmc-wbtn { background:#ec1f27 !important; }
 
+.project__stack{
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+
 /* =========================
    Responsive
    ========================= */

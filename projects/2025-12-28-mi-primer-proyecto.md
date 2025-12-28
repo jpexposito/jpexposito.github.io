@@ -1,7 +1,13 @@
 ---
 layout: default
 title: "Mi primer proyecto"
-permalink: /projects/mi-primer-proyecto/
+date: 2025-12-28
+nivel: "Intermedio"
+promocion: "Destacado"
+stack:
+  - Spring Boot
+  - Docker
+  - PostgreSQL
 ---
 
 <div class="cards-grid cards-grid--2">

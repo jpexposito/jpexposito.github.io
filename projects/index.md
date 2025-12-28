@@ -1,6 +1,7 @@
 ---
 layout: default
-title: projects
+title: Projects
+permalink: /projects/
 ---
 
 <h2 class="blog__title">Mis projectos</h2>
