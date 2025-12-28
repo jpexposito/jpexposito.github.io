@@ -26,6 +26,18 @@ Estos son mis tres ejes:
 
 ---
 
+## A nivel docente
+
+- Centralizar material de **docencia y desarrollo** en un único sitio.
+- Separar y conectar:
+  - 📘 **Teoría** (blog, guías, referencias).
+  - 🧪 **Prácticas** (enunciados, laboratorios, casos).
+  - 💻 **Código** (repositorios, documentación técnica).
+- Publicar con **Markdown**, sin builds complejos.
+- Mantener enlaces estables, claros y compartibles.
+
+---
+
 ## Cómo está organizado esta web (para navegar fácil)
 
 Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo que escribo (blog), lo que construyo (projects) y lo que publico (repositorios).
@@ -34,7 +46,7 @@ Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo qu
   <img src="assets/images/estructura-web.png" width="300" height="30%" alt="@jpexposito en construccion">
 </div>
 
-### 📝 Web + Blog (Aprende y conecta)
+### Web + Blog (Aprende y conecta)
 Aquí publico:
 - 📘 **Teoría**: artículos, guías, referencias, “por qué y cómo”.
 - 🧭 Contenido ordenado para estudiantes y desarrolladores.
@@ -48,7 +60,7 @@ Cada proyecto tiene su página con:
 - Capturas o demo
 - Enlace al repositorio
 
-### 💻 Repositorios (Explora el código)
+### Repositorios (Explora el código)
 En GitHub encontrarás:
 - Código fuente
 - README completo
@@ -56,18 +68,6 @@ En GitHub encontrarás:
 - Documentación y pasos para reproducir
 
 > El objetivo de estos repositorios es **compartir conocimiento**: lo aprendido en projects y lo que he ido extrayendo de internet (bien filtrado y aplicado).
-
----
-
-## A nivel docente
-
-- Centralizar material de **docencia y desarrollo** en un único sitio.
-- Separar y conectar:
-  - 📘 **Teoría** (blog, guías, referencias).
-  - 🧪 **Prácticas** (enunciados, laboratorios, casos).
-  - 💻 **Código** (repositorios, documentación técnica).
-- Publicar con **Markdown**, sin builds complejos.
-- Mantener enlaces estables, claros y compartibles.
 
 ---
 
