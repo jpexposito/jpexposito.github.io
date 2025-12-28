@@ -42,10 +42,6 @@ Estos son mis tres ejes:
 
 Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo que escribo (blog), lo que construyo (projects) y lo que publico (repositorios).
 
-<div align="center">
-  <img src="assets/images/estructura-web.png" width="300" height="30%" alt="@jpexposito en construccion">
-</div>
-
 <div class="cards-grid cards-grid--3">
   <div class="cardx">
     <div class="cardx__head">
