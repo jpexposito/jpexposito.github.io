@@ -45,13 +45,40 @@
 /* Chips */
 .chips{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
 .chip{
-  padding: 8px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,.10);
+  appearance:none;
+  -webkit-appearance:none;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.45rem;
+
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  border-radius: var(--btn-radius);
+
+  /* Mantiene el color neutro actual */
   background: rgba(0,0,0,.03);
-  text-decoration:none;
+  border: 1px solid rgba(0,0,0,.10);
   color: inherit;
-  font-weight: 600;
+
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration:none;
+
+  transition: transform .12s ease, background .12s ease, box-shadow .12s ease, border-color .12s ease, opacity .12s ease;
+}
+
+.chip:hover{
+  transform: translateY(-1px);
+  background: rgba(0,0,0,.06);
+  box-shadow: var(--btn-shadow);
+  border-color: rgba(0,0,0,.14);
+}
+
+.chip:focus-visible{
+  outline: 3px solid rgba(248,164,6,.25);
+  outline-offset: 2px;
 }
 
 /* Stack */
