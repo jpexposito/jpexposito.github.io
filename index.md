@@ -17,11 +17,11 @@ Si algo tengo claro es que **para llegar a dar mil pasos, se comienza dando el p
 Estos son mis tres ejes:
 
 - **Aprender**: entender el “por qué” (teoría, guías, referencias).
-- **Construir**: llevarlo a la práctica (projects reales, ejercicios, casos).
+- **Construir**: llevarlo a la práctica (proyectos reales, ejercicios, casos).
 - **Con cariño**: explicarlo claro, *para que lo entienda mi abuela y lo disfrute mi hijo*.
 
 <div align="center">
-  <img src="assets/images/construccion.png" width="150" height="30%" alt="@jpexposito en construccion">
+  <img src="{{ '/assets/images/construccion.png' | relative_url }}" width="150" height="30%" alt="@jpexposito en construccion">
 </div>
 
 ---
@@ -38,9 +38,9 @@ Estos son mis tres ejes:
 
 ---
 
-## Cómo está organizado esta web (para navegar fácil)
+## Cómo está organizada esta web (para navegar fácil)
 
-Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo que escribo (blog), lo que construyo (projects) y lo que publico (repositorios).
+Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo que escribo (blog), lo que construyo (proyectos) y lo que publico (repositorios).
 
 <div class="cards-grid cards-grid--3">
   <div class="cardx">
@@ -55,11 +55,11 @@ Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo qu
     <ul class="cardx__list">
       <li>📘 <strong>Teoría</strong>: artículos, guías, referencias, “por qué y cómo”.</li>
       <li>🧭 Contenido ordenado para estudiantes y desarrolladores.</li>
-      <li>🔗 Enlaces directos a <strong>projects</strong> relacionados.</li>
+      <li>🔗 Enlaces directos a <strong>proyectos</strong> relacionados.</li>
     </ul>
 
     <div class="cardx__cta">
-      <a class="btnx btnx--primary" href="{{ '/blog' | relative_url }}">Explorar Blog</a>
+      <a class="btnx" href="{{ '/blog' | relative_url }}">Explorar Blog</a>
     </div>
   </div>
 
@@ -67,7 +67,7 @@ Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo qu
     <div class="cardx__head">
       <div class="cardx__icon">🧪</div>
       <div>
-        <div class="cardx__title">Projects / Demo</div>
+        <div class="cardx__title">Proyectos / Demo</div>
         <div class="cardx__subtitle">Muestra lo construido</div>
       </div>
     </div>
@@ -81,7 +81,7 @@ Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo qu
     </ul>
 
     <div class="cardx__cta">
-      <a class="btnx btnx--primary" href="{{ '/projects' | relative_url }}">Ver Projects</a>
+      <a class="btnx" href="{{ '/projects' | relative_url }}">Ver Proyectos</a>
     </div>
   </div>
 
@@ -106,7 +106,9 @@ Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo qu
     </div>
 
     <div class="cardx__cta">
-      <a class="btnx btnx--ghost" href="{{ site.github_url | default: 'https://github.com/jpexposito' }}" target="_blank" rel="noopener">
+      <a class="btnx btnx--ghost"
+         href="{{ site.github_url | default: 'https://github.com/jpexposito' }}"
+         target="_blank" rel="noopener">
         Explorar GitHub →
       </a>
     </div>
@@ -114,7 +116,7 @@ Este sitio es mi **hub técnico y docente**: un punto único donde conecto lo qu
 </div>
 
 <div align="center" style="margin-top: 14px;">
-  <img src="{{ 'assets/images/estructura-web.png' | relative_url }}" width="520" style="max-width:100%; height:auto;" alt="Estructura web">
+  <img src="{{ '/assets/images/estructura-web.png' | relative_url }}" width="520" style="max-width:100%; height:auto;" alt="Estructura web">
 </div>
 
 <hr/>
