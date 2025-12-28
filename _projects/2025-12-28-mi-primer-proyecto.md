@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Mi primer project"
 date: 2025-12-28
 nivel: "Demo"
