@@ -1,12 +1,26 @@
+/* =========================
+   site.css (final)
+   - Layout general + hero + nav
+   - Botones unificados (nav + projects + cards .btnx)
+   - Estilos blog/projects existentes
+   ========================= */
+
 :root{
   --text:#1f2328;
   --bg:#f6f7fb;
   --card:#ffffff;
   --border:#e5e7eb;
 
-  /* Colores base (ajusta si quieres) */
-  --brand-1:#d32f2f;  /* color principal botón */
-  --brand-2:#b71c1c;  /* hover / énfasis */
+  /* Botón (Home por defecto) */
+  --btn-bg:#f8a406;
+  --btn-bg-hover:#e09000;
+  --btn-text:#111;
+  --btn-border:rgba(0,0,0,.10);
+
+  --btn-radius:12px;
+  --btn-pad-y:10px;
+  --btn-pad-x:14px;
+  --btn-shadow:0 8px 18px rgba(0,0,0,.12);
 }
 
 *{box-sizing:border-box}
@@ -44,7 +58,6 @@ body{
 /* HERO */
 .hero{
   padding: 26px 18px 18px;
-  border-bottom: 1px solid rgba(0,0,0,.06);
   width: 100%;
   border-bottom: 1px solid rgba(0,0,0,.06);
 }
@@ -70,8 +83,18 @@ body{
   font-size: 30px;
 }
 
+/* Banner */
+.hero__banner{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
 .hero__tagline{
-  margin: 8px 0 14px;
+  margin: 10px 0 14px;
   color: rgba(31,35,40,.78);
   font-size: 15px;
   text-align: center;
@@ -86,24 +109,109 @@ body{
   flex-wrap: wrap;
 }
 
-/* Botones */
-.nav__link{
+/* =========================
+   BOTONES (UNIFICADOS)
+   - Menú: .nav__link
+   - Projects: .project__btn
+   - Cards/CTAs: .btnx
+   ========================= */
+
+.nav__link,
+body.projects .project__btn,
+.btnx{
+  appearance:none;
+  -webkit-appearance:none;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.45rem;
+
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  border-radius: var(--btn-radius);
+
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1;
   text-decoration: none;
-  color: #fff;
-  padding: 04px 14px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  background: #f8a406; /* color principal */
-  transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+  cursor: pointer;
+
+  transition: transform .12s ease, background .12s ease, box-shadow .12s ease, border-color .12s ease, opacity .12s ease;
 }
 
-.nav__link:hover{
+.nav__link:hover,
+body.projects .project__btn:hover,
+.btnx:hover{
   transform: translateY(-1px);
-  background: #e09000; /* hover similar (más oscuro) */
-  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  background: var(--btn-bg-hover);
+  box-shadow: var(--btn-shadow);
 }
 
-/* Contenido en tarjeta */
+.nav__link:focus-visible,
+body.projects .project__btn:focus-visible,
+.btnx:focus-visible{
+  outline: 3px solid rgba(248,164,6,.35);
+  outline-offset: 2px;
+}
+
+/* Menú tipo “pill” */
+.nav__link{
+  border-radius: 999px;
+  padding: 10px 14px;
+}
+
+/* Variante ghost (para cards o projects) */
+.btnx--ghost,
+body.projects .project__btn--ghost{
+  background: transparent;
+  color: var(--btn-bg-hover);
+  border-color: rgba(0,0,0,.18);
+  box-shadow: none;
+}
+
+.btnx--ghost:hover,
+body.projects .project__btn--ghost:hover{
+  background: rgba(0,0,0,.03);
+  border-color: rgba(0,0,0,.26);
+  box-shadow: none;
+}
+
+/* =========================
+   Colores por sección (solo variables)
+   ========================= */
+
+/* BLOG: azul */
+body.blog{
+  --btn-bg:#1688c6;
+  --btn-bg-hover:#1273a7;
+  --btn-text:#fff;
+  --btn-border:rgba(0,0,0,.08);
+}
+body.blog .nav__link:focus-visible,
+body.blog .btnx:focus-visible{
+  outline-color: rgba(22,136,198,.35);
+}
+
+/* PROJECTS: rojo */
+body.projects{
+  --btn-bg:#ec1f27;
+  --btn-bg-hover:#c8181f;
+  --btn-text:#fff;
+  --btn-border:rgba(0,0,0,.08);
+}
+body.projects .nav__link:focus-visible,
+body.projects .project__btn:focus-visible,
+body.projects .btnx:focus-visible{
+  outline-color: rgba(236,31,39,.35);
+}
+
+/* =========================
+   Contenido en tarjeta
+   ========================= */
 main.container{
   margin-top: 16px;
   background: var(--card);
@@ -152,125 +260,19 @@ iframe, video{
   opacity: .85;
 }
 
+/* =========================
+   Footer
+   ========================= */
+.footer{
+  margin-top: 22px;
+  border-top: 1px solid rgba(0,0,0,.06);
+  padding: 14px 0 26px;
+  color: rgba(31,35,40,.72);
+}
 
 /* =========================
-   Responsive (Mobile First)
+   projects: tags/pills + textos
    ========================= */
-
-/* --- Tablets (<= 768px) --- */
-@media (max-width: 768px) {
-  .container{
-    padding: 16px;
-  }
-
-  .hero{
-    padding: 20px 14px 14px;
-  }
-
-  .hero__inner{
-    padding: 16px 14px 14px;
-    border-radius: 16px;
-  }
-
-  .hero__brand{
-    font-size: 26px;
-  }
-
-  .hero__tagline{
-    font-size: 14px;
-    margin: 6px 0 12px;
-  }
-
-  .nav{
-    gap: 8px;
-  }
-
-  .nav__link{
-    padding: 9px 12px;
-  }
-
-  main.container{
-    border-radius: 16px;
-  }
-}
-
-/* --- Móvil (<= 480px) --- */
-@media (max-width: 480px) {
-  body{
-    font-size: 15px;
-  }
-
-  .container{
-    padding: 12px;
-  }
-
-  .hero{
-    padding: 16px 12px 12px;
-  }
-
-  .hero__inner{
-    padding: 14px 12px 12px;
-    border-radius: 14px;
-  }
-
-  .hero__brand{
-    font-size: 22px;
-    letter-spacing: 0;
-  }
-
-  .hero__tagline{
-    font-size: 13px;
-    margin: 6px 0 10px;
-  }
-
-  /* Menú más usable en móvil: 2 columnas */
-  .nav{
-    gap: 8px;
-  }
-
-  .nav__link{
-    flex: 1 1 calc(50% - 8px); /* 2 por fila */
-    text-align: center;
-    padding: 10px 10px;
-  }
-
-  main.container{
-    margin-top: 12px;
-    border-radius: 14px;
-  }
-}
-
-/* --- Muy pequeño (<= 360px) --- */
-@media (max-width: 360px) {
-  .nav__link{
-    flex: 1 1 100%; /* 1 por fila si no cabe */
-  }
-}
-
-/* projects (solo en /projects/) */
-body.projects .project__btn{
-  display:inline-block;
-  padding:.5rem .8rem;
-  border-radius:.6rem;
-  background:#ec1f27;
-  color:#fff;
-  text-decoration:none;
-  margin-right:.5rem;
-}
-body.projects .project__btn:hover{
-  background:#c8181f;
-}
-
-body.projects .project__btn--ghost{
-  background:transparent;
-  border:1px solid rgba(236,31,39,.55);
-  color:#ec1f27;
-}
-body.projects .project__btn--ghost:hover{
-  border-color:rgba(200,24,31,.75);
-  color:#c8181f;
-}
-
 body.projects .project__tags{
   list-style:none;
   padding:0;
@@ -301,15 +303,8 @@ body.projects .project a{
 body.projects .project a:hover{
   color:#c8181f;
 }
+
 /* ===== BLOG (solo /blog/) ===== */
-body.blog .nav__link{
-  background:#1688c6;
-}
-body.blog .nav__link:hover{
-  transform: translateY(-1px);
-  background:#1273a7;
-  box-shadow: 0 8px 18px rgba(0,0,0,.12);
-}
 
 /* Portada del blog */
 body.blog .blog__title{
@@ -356,16 +351,8 @@ body.blog h3{
 }
 
 /* ===== projects (solo /projects/) ===== */
-body.projects .nav__link{
-  background:#ec1f27;           /* rojo principal */
-}
-body.projects .nav__link:hover{
-  transform: translateY(-1px);
-  background:#c8181f;           /* rojo más oscuro */
-  box-shadow: 0 8px 18px rgba(0,0,0,.12);
-}
 
-/* Portada de projects */
+/* Portada de projects (usa clases blog__* en tu plantilla) */
 body.projects .blog__title{
   color:#ec1f27;
   margin-bottom:1.5rem;
@@ -410,10 +397,53 @@ body.projects h2{
   margin-top:1.25rem;
 }
 body.projects h3{
-  color:#a3151b; /* rojo más sobrio para jerarquía */
+  color:#a3151b;
 }
 
 /* Botón Buy Me a Coffee personalizado */
 body.blog #bmc-wbtn { background:#1688c6 !important; }
 body.projects #bmc-wbtn { background:#ec1f27 !important; }
 
+/* =========================
+   Responsive
+   ========================= */
+
+/* --- Tablets (<= 768px) --- */
+@media (max-width: 768px) {
+  .container{ padding: 16px; }
+  .hero{ padding: 20px 14px 14px; }
+  .hero__inner{ padding: 16px 14px 14px; border-radius: 16px; }
+  .hero__brand{ font-size: 26px; }
+  .hero__tagline{ font-size: 14px; margin: 8px 0 12px; }
+  .nav{ gap: 8px; }
+  .nav__link{ padding: 10px 12px; }
+  main.container{ border-radius: 16px; }
+}
+
+/* --- Móvil (<= 480px) --- */
+@media (max-width: 480px) {
+  body{ font-size: 15px; }
+  .container{ padding: 12px; }
+  .hero{ padding: 16px 12px 12px; }
+  .hero__inner{ padding: 14px 12px 12px; border-radius: 14px; }
+  .hero__brand{ font-size: 22px; letter-spacing: 0; }
+  .hero__tagline{ font-size: 13px; margin: 8px 0 10px; }
+
+  /* Menú más usable en móvil: 2 columnas */
+  .nav{ gap: 8px; }
+  .nav__link{
+    flex: 1 1 calc(50% - 8px);
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  main.container{
+    margin-top: 12px;
+    border-radius: 14px;
+  }
+}
+
+/* --- Muy pequeño (<= 360px) --- */
+@media (max-width: 360px) {
+  .nav__link{ flex: 1 1 100%; }
+}

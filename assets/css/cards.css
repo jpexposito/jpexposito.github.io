@@ -1,9 +1,14 @@
-/* Cards (home/sections) */
-.cards-grid { display: grid; gap: 16px; margin: 14px 0 6px; }
-.cards-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.cards-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* =========================
+   cards.css (final)
+   - Solo layout/estilos de cards
+   - Botones .btnx se heredan desde site.css
+   ========================= */
 
-.cardx {
+.cards-grid{ display:grid; gap:16px; margin:14px 0 6px; }
+.cards-grid--3{ grid-template-columns:repeat(3, minmax(0, 1fr)); }
+.cards-grid--2{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+
+.cardx{
   border: 1px solid rgba(0,0,0,.08);
   border-radius: 16px;
   background: #fff;
@@ -11,22 +16,22 @@
   box-shadow: 0 8px 24px rgba(0,0,0,.04);
 }
 
-.cardx__head { display: flex; gap: 12px; align-items: center; }
-.cardx__icon {
+.cardx__head{ display:flex; gap:12px; align-items:center; }
+.cardx__icon{
   width: 40px; height: 40px;
-  display: grid; place-items: center;
+  display:grid; place-items:center;
   border-radius: 12px;
-  background: rgba(255, 186, 0, .12); /* toque cálido */
+  background: rgba(255, 186, 0, .12);
   border: 1px solid rgba(255, 186, 0, .25);
   font-size: 18px;
 }
-.cardx__title { font-weight: 800; font-size: 18px; line-height: 1.2; }
-.cardx__subtitle { color: rgba(0,0,0,.6); font-size: 14px; margin-top: 2px; }
+.cardx__title{ font-weight:800; font-size:18px; line-height:1.2; }
+.cardx__subtitle{ color: rgba(0,0,0,.6); font-size:14px; margin-top:2px; }
 
-.cardx__list { margin: 12px 0 0; padding-left: 18px; color: rgba(0,0,0,.8); }
-.cardx__list li { margin: 6px 0; }
+.cardx__list{ margin:12px 0 0; padding-left:18px; color: rgba(0,0,0,.8); }
+.cardx__list li{ margin:6px 0; }
 
-.cardx__note {
+.cardx__note{
   margin-top: 12px;
   padding: 10px 12px;
   border-radius: 12px;
@@ -35,49 +40,28 @@
   color: rgba(0,0,0,.75);
 }
 
-.cardx__cta { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
-
-/* Buttons */
-.btnx {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 12px;
-  border-radius: 12px;
-  text-decoration: none;
-  border: 1px solid rgba(0,0,0,.12);
-  color: inherit;
-  background: #fff;
-  font-weight: 700;
-}
-.btnx--primary {
-  background: #f6b21a; /* amarillo cálido */
-  border-color: #f6b21a;
-  color: #111;
-}
-.btnx--ghost { background: #fff; }
+.cardx__cta{ margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
 
 /* Chips */
-.chips { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
-.chip {
+.chips{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+.chip{
   padding: 8px 10px;
   border-radius: 999px;
   border: 1px solid rgba(0,0,0,.10);
   background: rgba(0,0,0,.03);
-  text-decoration: none;
+  text-decoration:none;
   color: inherit;
   font-weight: 600;
 }
 
-/* Stack icons */
-.stack { margin-top: 12px; display: grid; gap: 12px; }
-.stack__row { display: grid; gap: 8px; }
-.stack__label { font-weight: 800; font-size: 14px; }
-.stack__icons { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-.stack__icons img { width: 34px; height: 34px; object-fit: contain; }
+/* Stack */
+.stack{ margin-top:12px; display:grid; gap:12px; }
+.stack__row{ display:grid; gap:8px; }
+.stack__label{ font-weight:800; font-size:14px; }
+.stack__icons{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.stack__icons img{ width:34px; height:34px; object-fit:contain; }
 
-/* Responsive */
-@media (max-width: 980px) {
-  .cards-grid--3 { grid-template-columns: 1fr; }
-  .cards-grid--2 { grid-template-columns: 1fr; }
+@media (max-width: 980px){
+  .cards-grid--3{ grid-template-columns:1fr; }
+  .cards-grid--2{ grid-template-columns:1fr; }
 }
