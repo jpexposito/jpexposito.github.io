@@ -3,38 +3,50 @@ layout: default
 title: Inicio
 ---
 
-## Evolucionar y mejorar es el trabajo de cada día
+<div class="cards-grid cards-grid--2">
+  <div class="cardx">
+    <div class="cardx__head">
+      <div class="cardx__icon">🚀</div>
+      <div>
+        <div class="cardx__title">Evolucionar y mejorar</div>
+        <div class="cardx__subtitle">El trabajo de cada día</div>
+      </div>
+    </div>
 
-Soy Ingeniero Informático por vocación. Me motiva aprender, trabajar en equipo y mejorar con cada proyecto.  
-Si algo tengo claro es que **para llegar a dar mil pasos, se comienza dando el primero**.
+    <p style="margin:12px 0 0;">
+      Soy Ingeniero Informático por vocación. Me motiva aprender, trabajar en equipo y mejorar con cada proyecto.
+      Si algo tengo claro es que <strong>para llegar a dar mil pasos, se comienza dando el primero</strong>.
+    </p>
 
-> **Importante**: _Evolucionar y mejorar es el trabajo de cada día_.
+    <div class="cardx__note">
+      <strong>Importante:</strong> <em>Evolucionar y mejorar es el trabajo de cada día.</em>
+    </div>
+  </div>
 
----
+  <div class="cardx">
+    <div class="cardx__head">
+      <div class="cardx__icon">🧭</div>
+      <div>
+        <div class="cardx__title">Accesos rápidos</div>
+        <div class="cardx__subtitle">Empieza por aquí</div>
+      </div>
+    </div>
 
-## Aprender · Construir · Hacerlo con cariño ❤️
+    <ul class="cardx__list">
+      <li>📘 Lee teoría, guías y referencias en el blog.</li>
+      <li>🧪 Explora projects con demos y casos reales.</li>
+      <li>💻 Revisa el código y documentación en GitHub.</li>
+    </ul>
 
-Estos son mis tres ejes:
-
-- **Aprender**: entender el “por qué” (teoría, guías, referencias).
-- **Construir**: llevarlo a la práctica (proyectos reales, ejercicios, casos).
-- **Con cariño**: explicarlo claro, *para que lo entienda mi abuela y lo disfrute mi hijo*.
-
-<div align="center">
-  <img src="{{ '/assets/images/construccion.png' | relative_url }}" width="150" height="30%" alt="@jpexposito en construccion">
+    <div class="cardx__cta">
+      <a class="btnx" href="{{ '/blog' | relative_url }}">Explorar Blog</a>
+      <a class="btnx" href="{{ '/projects' | relative_url }}">Ver Projects</a>
+      <a class="btnx btnx--ghost"
+         href="{{ site.github_url | default: 'https://github.com/jpexposito' }}"
+         target="_blank" rel="noopener">GitHub →</a>
+    </div>
+  </div>
 </div>
-
----
-
-## A nivel docente
-
-- Centralizar material de **docencia y desarrollo** en un único sitio.
-- Separar y conectar:
-  - 📘 **Teoría** (blog, guías, referencias).
-  - 🧪 **Prácticas** (enunciados, laboratorios, casos).
-  - 💻 **Código** (repositorios, documentación técnica).
-- Publicar con **Markdown**, sin builds complejos.
-- Mantener enlaces estables, claros y compartibles.
 
 ---
 
