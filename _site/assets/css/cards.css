@@ -1,0 +1,94 @@
+/* =========================
+   cards.css (final)
+   - Solo layout/estilos de cards
+   - Botones .btnx se heredan desde site.css
+   ========================= */
+
+.cards-grid{ display:grid; gap:16px; margin:14px 0 6px; }
+.cards-grid--3{ grid-template-columns:repeat(3, minmax(0, 1fr)); }
+.cards-grid--2{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+
+.cardx{
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+
+.cardx__head{ display:flex; gap:12px; align-items:center; }
+.cardx__icon{
+  width: 40px; height: 40px;
+  display:grid; place-items:center;
+  border-radius: 12px;
+  background: rgba(255, 186, 0, .12);
+  border: 1px solid rgba(255, 186, 0, .25);
+  font-size: 18px;
+}
+.cardx__title{ font-weight:800; font-size:18px; line-height:1.2; }
+.cardx__subtitle{ color: rgba(0,0,0,.6); font-size:14px; margin-top:2px; }
+
+.cardx__list{ margin:12px 0 0; padding-left:18px; color: rgba(0,0,0,.8); }
+.cardx__list li{ margin:6px 0; }
+
+.cardx__note{
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.06);
+  color: rgba(0,0,0,.75);
+}
+
+.cardx__cta{ margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+
+/* Chips */
+.chips{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+.chip{
+  appearance:none;
+  -webkit-appearance:none;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.45rem;
+
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  border-radius: var(--btn-radius);
+
+  /* Mantiene el color neutro actual */
+  background: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.10);
+  color: inherit;
+
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration:none;
+
+  transition: transform .12s ease, background .12s ease, box-shadow .12s ease, border-color .12s ease, opacity .12s ease;
+}
+
+.chip:hover{
+  transform: translateY(-1px);
+  background: rgba(0,0,0,.06);
+  box-shadow: var(--btn-shadow);
+  border-color: rgba(0,0,0,.14);
+}
+
+.chip:focus-visible{
+  outline: 3px solid rgba(248,164,6,.25);
+  outline-offset: 2px;
+}
+
+/* Stack */
+.stack{ margin-top:12px; display:grid; gap:12px; }
+.stack__row{ display:grid; gap:8px; }
+.stack__label{ font-weight:800; font-size:14px; }
+.stack__icons{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.stack__icons img{ width:34px; height:34px; object-fit:contain; }
+
+@media (max-width: 980px){
+  .cards-grid--3{ grid-template-columns:1fr; }
+  .cards-grid--2{ grid-template-columns:1fr; }
+}

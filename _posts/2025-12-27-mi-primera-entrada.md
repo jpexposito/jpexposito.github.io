@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Presentación"
-date: 2025-12-27 18:30:00 +0000
+date: 2025-12-28 12:00:00 +0000
 categories: [general]
 ---
 
