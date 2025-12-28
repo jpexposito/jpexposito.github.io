@@ -1,9 +1,10 @@
 /* =========================
-   site.css (actualizado)
+   site.css (TOTAL corregido)
    - Layout general + hero + nav
    - Botones unificados (nav + projects + cards .btnx)
    - Listado "Últimas entradas" con estilo tipo card
-   - Estilos blog/projects existentes (colores y headings)
+   - Pulido de Markdown (blog + projects + home): hr, blockquote, headings, listas, code
+   - Colores por sección (blog/projects) mantenidos
    ========================= */
 
 :root{
@@ -211,7 +212,7 @@ body.projects .btnx:focus-visible{
 }
 
 /* =========================
-   Contenido en tarjeta
+   Contenido principal
    ========================= */
 main.container{
   margin-top: 16px;
@@ -219,7 +220,7 @@ main.container{
   border: 1px solid var(--border);
   border-radius: 18px;
   box-shadow: 0 2px 14px rgba(0,0,0,.06);
-  text-align: justify;
+  text-align: left; /* mejor lectura en posts */
 }
 
 /* Imágenes siempre responsivas */
@@ -236,16 +237,87 @@ pre{
   overflow-x: auto;
   max-width: 100%;
 }
-code{
-  word-break: break-word;
+
+/* =========================
+   Pulido Markdown (Blog + Projects + Home)
+   ========================= */
+
+/* Separadores bonitos para --- y * * * */
+main.container hr{
+  border: 0;
+  height: 1px;
+  background: rgba(0,0,0,.08);
+  margin: 18px 0;
 }
 
-/* Justificar texto (párrafos y listas dentro del contenido) */
-main.container p,
-main.container li{
-  text-align: justify;
-  text-justify: inter-word;
+/* Blockquote tipo “callout” */
+main.container blockquote{
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.08);
+  border-left: 5px solid rgba(0,0,0,.18);
 }
+main.container blockquote p{ margin: 0; }
+
+/* Headings generales dentro del contenido */
+main.container h1{
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 10px 0 12px;
+  font-weight: 900;
+}
+main.container h2{
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 18px 0 10px;
+  font-weight: 900;
+}
+main.container h3{
+  font-size: 17px;
+  margin: 14px 0 8px;
+  font-weight: 850;
+}
+
+/* Listas más limpias */
+main.container ul,
+main.container ol{
+  padding-left: 20px;
+  margin: 10px 0 14px;
+}
+main.container li{ margin: 6px 0; }
+
+/* Código inline + bloques */
+main.container code{
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.08);
+  padding: .08rem .35rem;
+  border-radius: 8px;
+  word-break: break-word;
+}
+main.container pre{
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+main.container pre code{
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+/* Enlaces con subrayado suave */
+main.container a{
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Colores “brand” en enlaces dentro de BLOG/PROJECTS */
+body.blog main.container a{ color:#1688c6; }
+body.projects main.container a{ color:#ec1f27; }
 
 iframe, video{
   max-width: 100%;
@@ -272,8 +344,8 @@ iframe, video{
 }
 
 /* =========================
-   Blog list (Últimas entradas) estilo tipo cards
-   - No requiere cambiar el HTML
+   Blog/Projects list (Últimas entradas) estilo tipo cards
+   - Aplica donde uses .blog__*
    ========================= */
 
 .blog__title{
@@ -282,6 +354,10 @@ iframe, video{
   font-weight: 850;
   letter-spacing: .1px;
 }
+
+/* Colores del título por sección */
+body.blog .blog__title{ color:#1688c6; }
+body.projects .blog__title{ color:#ec1f27; }
 
 /* Lista como grid */
 .blog__list{
@@ -322,6 +398,10 @@ iframe, video{
   text-decoration: underline;
 }
 
+/* Links por sección (si quieres “brand” en vez de inherit) */
+body.blog .blog__link{ color:#1688c6; }
+body.projects .blog__link{ color:#ec1f27; }
+
 .blog__date{
   display: block;
   margin-top: 6px;
@@ -335,7 +415,7 @@ iframe, video{
 }
 
 /* =========================
-   projects: tags/pills + textos
+   projects: tags/pills + textos (si los usas dentro de fichas)
    ========================= */
 body.projects .project__tags{
   list-style:none;
@@ -361,21 +441,8 @@ body.projects .project__title{ margin-bottom:.2rem; }
 body.projects .project__meta{ margin:0 0 .75rem; color:#6c7a86; }
 
 /* Opcional: enlaces dentro del contenido del proyecto */
-body.projects .project a{
-  color:#ec1f27;
-}
-body.projects .project a:hover{
-  color:#c8181f;
-}
-
-/* ===== Títulos dentro de posts ===== */
-body.blog h1{ color:#1688c6; margin-bottom:.25rem; }
-body.blog h2{ color:#1273a7; margin-top:1.25rem; }
-body.blog h3{ color:#0f5f8a; }
-
-body.projects h1{ color:#ec1f27; margin-bottom:.25rem; }
-body.projects h2{ color:#c8181f; margin-top:1.25rem; }
-body.projects h3{ color:#a3151b; }
+body.projects .project a{ color:#ec1f27; }
+body.projects .project a:hover{ color:#c8181f; }
 
 /* Botón Buy Me a Coffee personalizado */
 body.blog #bmc-wbtn { background:#1688c6 !important; }
